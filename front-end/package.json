@@ -1,0 +1,37 @@
+{
+  "name": "kriket-zone",
+  "homepage": ".",
+  "dependencies": {
+    "@tanstack/react-table": "^8.9.3",
+    "bootstrap-icons": "^1.11.0",
+    "firebase": "^10.1.0",
+    "node-fetch": "^3.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.63.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "deploy:prod": "env-cmd -f .env.production npm run build && firebase use prod && firebase deploy --only hosting",
+    "deploy:dev": "env-cmd -f .env.development npm run build && firebase use dev && firebase deploy --only hosting"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "env-cmd": "^10.1.0"
+  }
+}

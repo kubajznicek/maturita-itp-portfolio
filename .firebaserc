@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "dev": "kriket-system-dev",
+    "prod": "kriket-system"
+  },
+  "targets": {},
+  "etags": {}
+}

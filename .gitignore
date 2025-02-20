@@ -1,0 +1,21 @@
+# dependencies
+/node_modules
+**/node_modules
+
+# production
+/build
+**/build
+**/build**
+.firebase
+
+# fake data
+emulator_data
+
+# secrets
+**/ConfigSecrets.js
+**/.env
+
+log
+*.log
+.vscode
+*.bkp

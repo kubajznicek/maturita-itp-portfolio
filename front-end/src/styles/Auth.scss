@@ -1,0 +1,88 @@
+.h-fit {
+    height: fit-content
+}
+
+.vh-80 {
+    height: 80vh
+}
+
+.w-fit {
+    width: fit-content
+}
+
+.background {
+    position: fixed;
+    background-image: url(../../public/images/background_2.jpeg);
+    background-size: cover;
+    z-index: -1;
+    filter: blur(5px);
+    transform: scale(1.03);
+}
+
+.fade-in-image {
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+}
+
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-out {
+    animation: fadeOut ease 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

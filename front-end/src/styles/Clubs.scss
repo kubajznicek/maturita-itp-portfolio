@@ -1,0 +1,29 @@
+.parent-clubs {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  grid-template-rows: repeat(3, max-content);
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .parent-clubs {
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(6, max-content);
+  }
+}
+
+/* Custom indigo button class */
+.btn-indigo {
+  color: #fff;
+  background-color: #6610f2; /* Use the indigo color code */
+  border-color: #6610f2; /* Use the indigo color code */
+}
+
+/* Optionally, you might want to add hover and active styles */
+.btn-indigo:hover,
+.btn-indigo:focus,
+.btn-indigo:active {
+  background-color: #5a09c7; /* Slightly darker shade for hover effect */
+  border-color: #5a09c7; /* Slightly darker shade for hover effect */
+}

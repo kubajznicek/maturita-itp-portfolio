@@ -1,0 +1,47 @@
+.parent {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: repeat(3, max-content);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1.5rem;
+}
+
+.circular-btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    bottom: 5rem;
+    right: 5rem;
+  
+    @media (max-width: 576px) {
+        bottom: 2rem;
+        right: 2rem;
+    }
+  }
+
+.scale-2 {
+    transform: scale(2);
+}
+
+
+.icon-background {
+    @media (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.start-3 {
+    left: 3%;
+}
+
+.top-10 {
+    top: 10%;
+}
+
+.end-20 {
+    right: 20%;
+}
+
+.bottom-15 {
+    bottom: 15%;
+}
